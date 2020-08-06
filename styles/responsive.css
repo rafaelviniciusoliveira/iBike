@@ -1,0 +1,29 @@
+@media (max-width: 1060px){
+    #page-home {
+        background-position-x: 200vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+    #page-home main .content2 a {
+        align-items: center;
+        width: 200px;
+    }
+    #page-home main .content3 a {
+        align-items: center;
+        width: 200px;
+        
+    }
+}
+
+@media (min-width: 1680px) {
+    #page-home {
+        background-position-x: 40vw;
+    }
+}

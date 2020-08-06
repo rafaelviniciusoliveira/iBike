@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBike - Cadastro de pessoa física</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    
+    <link rel="stylesheet" href="styles/responsive.css">
+
+</head>
+<body>
+
+    <script>
+        function mudarcor(e) {
+            var a1 = document.getElementById("bike1");
+            var a3 = document.getElementById("sino1");
+            var a4 = document.getElementById("engrenagem1");
+
+            
+            if (e.id == "bike1") {
+                e.src = "/imagensmenu/bike2.svg";
+                a3.src = "/imagensmenu/bell1.svg";
+                a4.src = "/imagensmenu/settings1.svg";
+            }
+
+            
+
+            if (e.id == "sino1") {
+                a1.src = "/imagensmenu/bike1.svg";
+                e.src = "/imagensmenu/bell2.svg";
+                a4.src = "/imagensmenu/settings1.svg";
+            }
+
+            if (e.id == "engrenagem1") {
+                a1.src = "/imagensmenu/bike1.svg";
+                a3.src = "/imagensmenu/bell1.svg";
+                e.src = "/imagensmenu/settings2.svg";
+            }
+
+        }
+    </script>
+    
+    <div id="page-menu">
+    
+        <header>
+
+                <p> Empresa, "nome"</p> 
+                <hr class="linha">   
+            
+            <div class="logo">
+                <img src="imagens/logo.svg" alt="logo" width="50px" height="50px">
+            </div>
+
+            <a href="/index.html">
+            <span></span>
+                Sair da conta
+            </a>
+        
+        </header>
+        <div class="linha1">
+            <img src="/imagens/line.svg" width="700px">
+        </div> 
+        
+
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" id="tab-1" name="tab-group-1" checked>
+                <label for="tab-1">
+                    <img class="tabsmenu" id="bike1" src="/imagensmenu/bike2.svg" onclick="mudarcor(this)" alt="cadastrar" width="60px" height="50px">
+                </label>
+                <div class="content">
+                    <div class="pesquisar">
+                        <div class="bikescadastradas" style=" overflow-y: scroll;">
+                            <h2>Bikes Cadastradas</h2>
+ 
+                            <div class="bikes">
+                                <div class="titulo">
+                                    <h2>1. Mountain Bike - MB01</h2>
+                                    <a href="altcadastro-bikeempresa.html"><span></span>Editar</a>                                   
+                                </div>
+                                <div class="info">
+                                    <div class="detalhes">
+                                        <h4>Preço:<br>
+                                            <a>R$ 5,00 por hora<br>
+                                                R$ 30,00 por dia<br>
+                                                R$ 450,00 por mês<br>
+                                            </a>
+                                        </h4>
+                                    
+                                        <div class="tecnico">
+                                            <a style="font-weight: 800;">Modelo:</a> <a>MBRS Cyclone 2011</a><br>
+                                            <a style="font-weight: 800;">Peso-máx:</a><a>120Kg</a><br>
+                                            <a style="font-weight: 800;">Manutenção:</a><a>19/07/2020</a>
+                                        </div>
+
+                                    </div>
+                                    <img class="bicicleta" src="/imagensmenu/MB01.png" alt="bibicleta">
+                                </div>
+                                
+                            </div>
+
+                            <div class="bikes">
+                                <div class="titulo">
+                                    <h2>2. Mountain Bike - MB02</h2>
+                                    <a href="altcadastro-bikeempresa.html"><span></span>Editar</a>                                   
+                                </div>
+                                <div class="info">
+                                    <div class="detalhes">
+                                        <h4>Preço:<br>
+                                            <a>R$ 5,00 por hora<br>
+                                                R$ 30,00 por dia<br>
+                                                R$ 450,00 por mês<br>
+                                            </a>
+                                        </h4>
+                                    
+                                        <div class="tecnico">
+                                            <a style="font-weight: 800;">Modelo:</a> <a>MBRS Cyclone 2013</a><br>
+                                            <a style="font-weight: 800;">Peso-máx:</a><a>120Kg</a><br>
+                                            <a style="font-weight: 800;">Manutenção:</a><a>19/07/2020</a>
+                                        </div>
+
+                                    </div>
+                                    <img class="bicicleta" src="/imagensmenu/MB02.png" alt="bibicleta">
+                                </div>
+                                
+                            </div>
+
+                            <div class="bikes">
+                                <div class="titulo">
+                                    <h2>3. BMX - BMX01</h2>
+                                    <div class="lefteditar">
+                                        <a href="altcadastro-bikeempresa.html"><span></span>Editar</a> 
+                                    </div>                                  
+                                </div>
+                                <div class="info">
+                                    <div class="detalhes">
+                                        <h4>Preço:<br>
+                                            <a>R$ 7,00 por hora<br>
+                                                R$ 36,00 por dia<br>
+                                                R$ 480,00 por mês<br>
+                                            </a>
+                                        </h4>
+                                    
+                                        <div class="tecnico">
+                                            <a style="font-weight: 800;">Modelo:</a> <a>BMX Doorx 2013</a><br>
+                                            <a style="font-weight: 800;">Peso-máx:</a><a>150Kg</a><br>
+                                            <a style="font-weight: 800;">Manutenção:</a><a>12/02/2020</a>
+                                        </div>
+
+                                    </div>
+                                    <img class="bicicleta" src="/imagensmenu/MB01.png" alt="bibicleta">
+                                </div>
+                                
+                            </div>
+
+                            <div class="bikes">
+                                <div class="titulo">
+                                    <h2>4. BMX - BMX02</h2>
+                                    <div class="lefteditar">
+                                        <a href="altcadastro-bikeempresa.html"><span></span>Editar</a> 
+                                    </div>                                  
+                                </div>
+                                <div class="info">
+                                    <div class="detalhes">
+                                        <h4>Preço:<br>
+                                            <a>R$ 7,00 por hora<br>
+                                                R$ 36,00 por dia<br>
+                                                R$ 480,00 por mês<br>
+                                            </a>
+                                        </h4>
+                                    
+                                        <div class="tecnico">
+                                            <a style="font-weight: 800;">Modelo:</a> <a>BMX Doorx 2013</a><br>
+                                            <a style="font-weight: 800;">Peso-máx:</a><a>150Kg</a><br>
+                                            <a style="font-weight: 800;">Manutenção:</a><a>12/02/2020</a>
+                                        </div>
+
+                                    </div>
+                                    <img class="bicicleta" src="/imagensmenu/MB01.png" alt="bibicleta">
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="buttoncadastrar">
+                
+                            <a href="cadastro-bikeempresa.html"><span></span>Cadastrar Bike</a>
+            
+                        </div> 
+
+                    </div>
+                </div>
+
+
+                
+            </div>
+
+            
+
+            <div class="tab">
+                <input type="radio" id="tab-3" name="tab-group-1">
+                <label for="tab-3">
+                    <img class="tabsmenu" id="sino1" src="/imagensmenu/bell1.svg" onclick="mudarcor(this)" alt="notificacoes" width="50px" height="50px">
+                </label>
+
+                <div class="content">
+                    <div class="notificacao">
+                        <h2>Notificações</h2>
+                        <p>Você possui 7 notificação.</p>
+                        
+                        <div class="listanotificacoes" >
+
+                        
+                            <div class="buttonnotificacao">
+                                <a style="font-size: 14px; color: #8E8888;">
+                                    <img src="/imagensmenu/emailuser.svg">
+                                    <span></span>JoãoPedro100%Bike@gmail.com
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a href="#" style="margin-bottom: 20px;">
+                                    <img src="/imagensmenu/chat.svg">
+                                    <span></span>Abrir Chat
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a style="font-size: 14px; color: #8E8888;">
+                                    <img src="/imagensmenu/emailuser.svg">
+                                    <span></span>AlfaMountainbike@bike.com
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a href="#" style="margin-bottom: 20px;">
+                                    <img src="/imagensmenu/chat.svg">
+                                    <span></span>Abrir Chat
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a style="font-size: 14px; color: #8E8888;">
+                                    <img src="/imagensmenu/emailuser.svg">
+                                    <span></span>Rodriggo@bike.com
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a href="#" style="margin-bottom: 20px;">
+                                    <img src="/imagensmenu/chat.svg">
+                                    <span></span>Abrir Chat
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a style="font-size: 14px; color: #8E8888;">
+                                    <img src="/imagensmenu/emailuser.svg">
+                                    <span></span>AlfaMountainbike@bike.com
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a href="#" style="margin-bottom: 20px;">
+                                    <img src="/imagensmenu/chat.svg">
+                                    <span></span>Abrir Chat
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a style="font-size: 14px; color: #8E8888;">
+                                    <img src="/imagensmenu/emailuser.svg">
+                                    <span></span>AlfaMountainbike@bike.com
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a href="#" style="margin-bottom: 20px;">
+                                    <img src="/imagensmenu/chat.svg">
+                                    <span></span>Abrir Chat
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a style="font-size: 14px; color: #8E8888;">
+                                    <img src="/imagensmenu/emailuser.svg">
+                                    <span></span>AlfaMountainbike@bike.com
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a href="#" style="margin-bottom: 20px;">
+                                    <img src="/imagensmenu/chat.svg">
+                                    <span></span>Abrir Chat
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a style="font-size: 14px; color: #8E8888;">
+                                    <img src="/imagensmenu/emailuser.svg">
+                                    <span></span>AlfaMountainbike@bike.com
+                                </a>
+                            </div>
+
+                            <div class="buttonnotificacao">
+                                <a href="#" style="margin-bottom: 20px;">
+                                    <img src="/imagensmenu/chat.svg">
+                                    <span></span>Abrir Chat
+                                </a>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="radio" id="tab-4" name="tab-group-1">
+                <label for="tab-4">
+                    <img class="tabsmenu" id="engrenagem1" src="/imagensmenu/settings1.svg" onclick="mudarcor(this)" alt="configuracoes" width="50px" height="50px">
+                </label>
+
+
+                <div class="content">
+                    
+                    <div class="configuracoes">
+                        <div class="titulo">
+                        <h2>Configurações</h2>
+                        </div>
+
+                        <div class="buttonconfig">
+                            <a href="altcadastro-empresa.html">
+                                <img src="/imagens/user.svg">
+                                
+                                <span></span>Alterar Cadastro
+                            </a>
+                        </div>
+                        <div class="buttonconfig">
+                            <a href="altcadastro-empresa.html">
+                                
+                                <span></span>Excluir Cadastro
+                                
+                            </a>
+                        </div>
+            
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

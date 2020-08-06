@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBike - Cadastro de Bike</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/create_register.css">
+    
+    <link rel="stylesheet" href="styles/responsive.css">
+
+</head>
+<body>
+
+    <div id="page-create-register">
+    
+        <header>
+            <div class="logo">
+                <img src="/imagens/logo.svg" alt="logo" width="50px" height="50px">
+            </div>
+            
+            <a href="/menuempresa.html">
+            <span></span>
+                Voltar para o menu
+            </a>
+            
+        </header>
+
+        <form action="">
+
+            <h1>Alterar Cadastro de Bicicletas</h1>
+
+            <fieldset>
+                <legend>
+                    <h2>Dados da bicicleta</h2>
+                </legend>
+
+                <div class="field">
+                   
+                    <input type="text" name="modelo" placeholder="Fabricante">
+                </div>
+
+                <div class="field">
+                   
+                    <input type="text" name="modelo" placeholder="Modelo">
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <input type="text" name="anoaq" placeholder="Ano de aquisição">
+                    </div>
+
+                    <div class="field">
+                        <input type="text" name="datamanutencao" placeholder="Data da última manutenção">
+                    </div>
+
+                </div>
+
+                <legend>
+                    <h2>Preço do empréstimo</h2>
+                </legend>
+                
+                <div class="field-group-p">
+                   
+
+                    <div class="field">
+                        <input type="number" name="phora" placeholder="R$ preço por hora">
+                    </div>
+
+                    <div class="field">
+                        <input type="number" name="pdia" placeholder="R$ preço por dia">
+                    </div>
+
+                    <div class="field">
+                        <input type="number" name="pmes" placeholder="R$ preço por mês">
+                    </div>
+
+                </div>
+
+                <div class="field-tec">
+                    <textarea id="exp" placeholder="Informações adicionais da bicicleta."></textarea>
+                </div>
+
+                <a href="#">
+                    <span></span>
+                        Anexar foto da bicicleta
+                </a>
+
+                
+
+            </fieldset>
+
+            <button onclick="location.href='menuempresa.html'" type="button">Alterar Cadastro</button>
+
+        </form>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBike - Cadastro de Empresa</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/create_register.css">
+    
+    <link rel="stylesheet" href="styles/responsive.css">
+
+</head>
+<body>
+
+    <div id="page-create-register">
+    
+        <header>
+            <div class="logo">
+                <img src="/imagens/logo.svg" alt="logo" width="50px" height="50px">
+            </div>
+            
+            <a href="/index.html">
+            <span></span>
+                Voltar para o início
+            </a>
+            
+        </header>
+
+        <form action="">
+
+            <h1>Cadastro de Usuário - Empresa</h1>
+
+            <fieldset>
+                <legend>
+                    <h2>Dados do usuário</h2>
+                </legend>
+
+                <div class="field">
+                   
+                    <input type="text" name="name" placeholder="Nome da Empresa">
+                </div>
+
+                <div class="field">
+                    
+                    <input type="text" name="cnpj" placeholder="CNPJ">
+                </div>
+
+                <div class="field">
+                    <input type="text" name="phone" placeholder="Telefone (DDD)">
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <input type="text" name="cep" placeholder="CEP">
+                    </div>
+
+                    <div class="field">
+                        <select name="uf" >
+                            <option value="">UF</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <select name="city">
+                            <option value="">Cidade</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <input type="text" name="address" placeholder="Endereço">
+                    </div>
+                    <div class="field">
+                        <input type="number" name="address2" placeholder="Número">
+                    </div>
+                </div>
+
+                <legend>
+                    <h2>Conta</h2>
+                </legend>
+
+                <div class="field">
+                   
+                    <input type="text" name="email" placeholder="E-mail">
+                </div>
+
+                <div class="field">
+                   
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+
+                
+
+                <a href="#">
+                    <span></span>
+                        Anexar foto no perfil
+                    </a>
+
+
+            </fieldset>
+
+            <button onclick="location.href='/menuempresa.html'" type="button"">Cadastrar Empresa</button>
+
+        </form>
+
+        
+    </div>
+</body>
+</html>

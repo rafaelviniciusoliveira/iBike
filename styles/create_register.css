@@ -1,0 +1,179 @@
+#page-create-register {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#page-create-register header{
+    
+    margin: 20px 0 0;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    color: var(--title-color);
+    font-size: 12px;
+
+}
+
+#page-create-register header .logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+#page-create-register header a {
+    margin-left: 500px;
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    font-size: 18px;
+}
+
+#page-create-register header a span{
+    margin-right: 10px;
+    background-image: url('../imagens/arrow-left.svg');
+    display: flex;
+    width: 20px;
+    height: 20px;
+
+}
+
+form {
+    background-color: rgb(247, 247, 247);
+    /*espaço em cima*/
+    margin: 40px auto;
+    /* preenchimento */
+    padding: 64px;
+
+    border-radius: 8px;
+    max-width: 730px;
+
+}
+
+form h1{
+    font-size: 24px;
+    text-align: center;
+
+}
+
+form fieldset {
+    margin-top: 15px;
+
+    border: 0;
+    
+}
+
+form legend{
+    margin-bottom: 20px;
+}
+
+form legend h2{
+    font-size: 20px;
+}
+
+form .field,
+form .field-tec {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+}
+
+
+form .field-group {
+    display: flex;
+
+}
+
+form input,
+form select,
+form textarea{
+    background-color: #f0f0f5;
+
+    border: 0;
+
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+
+    /*por causa do textarea*/
+    resize: vertical;
+    font-family: Roboto, sans-serif;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+
+form .field-group .field + .field{
+    margin-left: 24px;
+}
+
+form .field-group-p {
+    margin-right: 300px;
+
+}
+
+form .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .content a{
+    color: var(--title-color);  
+}
+
+form .field-tec{
+    margin-top: 30px;
+}
+
+form a{
+    position: absolute;
+    font-weight: 400;
+    display: flex;
+    font-size: 16px;
+    color: var(--title-color);
+    align-items: center;
+    justify-content: left;
+}
+form a span{
+    margin-right: 10px;
+    background-image: url('../imagens/image.svg');
+    
+    width: 22px;
+    height: 22px;
+
+}
+
+form button{
+    width: 350px;
+    height: 50px;
+
+    border-radius: 45px;
+
+    background: var(--title-color);
+
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+    justify-content: center;
+    
+    display: flex;
+    margin: 50px auto; 
+
+}
+
